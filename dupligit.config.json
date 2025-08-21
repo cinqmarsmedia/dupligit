@@ -1,0 +1,27 @@
+{
+  "targetRepo": "https://github.com/you/your-public-mirror",
+  "targetBranch": "main",
+  "rules": [
+    {
+      "pattern": "API_KEY=.*",
+      "replacement": "API_KEY=YOUR_API_KEY_HERE",
+      "flags": "g"
+    },
+    {
+      "pattern": "password\\s*=\\s*[\"'][^\"']+[\"']",
+      "replacement": "password = \"REDACTED\"",
+      "flags": "gi"
+    }
+  ],
+  "ignore": [
+    "*.env",
+    "*.env.*",
+    ".env*",
+    "secrets/",
+    "private/",
+    "*.key",
+    "*.pem",
+    "config/production.*",
+    "dupligit.config.json"
+  ]
+}

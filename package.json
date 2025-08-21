@@ -1,0 +1,38 @@
+{
+  "name": "dupligit",
+  "version": "1.0.1",
+  "description": "Sanitize and mirror a private repo to a public repo using simple JSON-configured regex rules and ignore globs.",
+  "bin": {
+    "dupligit": "bin/dupligit.js",
+    "dupligit-setup-action": "bin/dupligit-setup-action.js"
+  },
+  "type": "module",
+  "main": "lib/dupligit.js",
+  "files": [
+    "bin",
+    "lib",
+    "action.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node bin/dupligit.js",
+    "test": "node -e \"console.log('no tests yet')\"",
+    "postinstall": "node bin/dupligit-install-hook.js || true",
+    "dupligit:uninstall-hook": "node bin/dupligit-uninstall-hook.js"
+  },
+  "keywords": [
+    "git",
+    "mirror",
+    "sanitize",
+    "redact",
+    "regex",
+    "github",
+    "action"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "minimatch": "^9.0.4"
+  }
+}

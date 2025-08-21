@@ -1,0 +1,25 @@
+name: 'dupligit'
+description: 'Sanitize & mirror a private repo to a public target using simple JSON rules. Ideal for maintaining a public repo from a parent repo that has secrets or sensitive data. '
+author: 'dupligit'
+inputs:
+  config:
+    description: 'Path to dupligit.config.json'
+    required: false
+    default: 'dupligit.config.json'
+  force:
+    description: 'Force push to target branch'
+    required: false
+    default: 'false'
+  verbose:
+    description: 'Verbose logging'
+    required: false
+    default: 'false'
+  token:
+    description: 'Git token with push access to target repo'
+    required: false
+runs:
+  using: 'node20'
+  main: 'bin/dupligit.js'
+branding:
+  color: 'purple'
+  icon: 'upload-cloud'
