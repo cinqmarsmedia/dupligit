@@ -1,5 +1,5 @@
-name: 'dupligit'
-description: 'Sanitize & mirror a private repo to a public target using simple JSON rules. Ideal for maintaining a public repo from a parent repo that has secrets or sensitive data. '
+name: 'dupliGit'
+description: 'Sanitize & mirror a private repo to a public target using simple JSON rules.'
 author: 'dupligit'
 inputs:
   config:
