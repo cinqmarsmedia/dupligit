@@ -1,4 +1,4 @@
-name: 'dupliGit'
+name: 'dupligit-sync'
 description: 'Sanitize & mirror a private repo to a public target using simple JSON rules.'
 author: 'dupligit'
 inputs:
