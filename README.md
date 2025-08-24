@@ -85,7 +85,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: npm i dupligit@0.1.0
+      - run: npm i dupligit@latest
       - run: npx dupligit -f -v
         env:
           DUPLIGIT_TOKEN: ${{ secrets.DUPLIGIT_TOKEN }}
